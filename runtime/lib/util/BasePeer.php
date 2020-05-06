@@ -400,7 +400,7 @@ class BasePeer
                                     if ($raw[$r] == '?') {
                                         $rawcvt .= ':p' . $p++;
                                     } else {
-                                        $rawcvt .= $raw{$r};
+                                        $rawcvt .= $raw[$r];
                                     }
                                 }
                                 $sql .= $rawcvt . ', ';
